@@ -7,19 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ComboBox Margin="527,133,53,195">
-            <ComboBoxItem Name="ComboboxItem_Selecred">
-                <StackPanel>
-                    <TextBlock FontStyle="Oblique" Text="Hello World" />
-                    <TextBlock Text="Bay World"/>
-                </StackPanel>
-            </ComboBoxItem>
-            <ComboBoxItem>
-                <StackPanel>
-                    <TextBlock Text="text"/>
-                    <TextBlock Text="da"/>
-                </StackPanel>
-            </ComboBoxItem>
-        </ComboBox>
+        <Popup x:Name="popup1" StaysOpen="False" Placement="Mouse" MaxWidth="200" AllowsTransparency="True">
+            <Image Source="\\sysprofiles.adm.vvsu.ru\STUDENTRPROFILES$\Ktamada\Desktop\cats.jpg" Stretch="Uniform" />
+        </Popup>
+
+        <Button Content="Просмотр фотографий" Width="150" HorizontalAlignment="Left" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave"/>
     </Grid>
 </Window>

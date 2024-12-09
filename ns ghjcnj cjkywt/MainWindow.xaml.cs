@@ -25,12 +25,15 @@ namespace ns_ghjcnj_cjkywt
             InitializeComponent();
         }
 
-        private void ComboBoxItem_Selected(object sender, RoutedEventArgs e)
+        private void Button_MouseEnter(object sender, MouseEventArgs e)
         {
-            MessageBox.Show("hello");
+            popup1.IsOpen = true;
         }
 
-
+        private void Button_MouseLeave(object sender, MouseEventArgs e)
+        {
+            popup1.IsOpen = false;
+        }
     }
 
 }
